@@ -405,11 +405,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8774D7A719A2D77200C64E06 /* Build configuration list for PBXNativeTarget "Cryptex" */;
 			buildPhases = (
+				87E9B0D319ACB3FB007E2079 /* Bump build version */,
 				8774D77219A2D77100C64E06 /* Sources */,
 				8774D77319A2D77100C64E06 /* Frameworks */,
 				8774D77419A2D77100C64E06 /* Resources */,
 				8774D7F319A3A07000C64E06 /* CopyFiles */,
-				87E9B0D319ACB3FB007E2079 /* Bump build version */,
 				87C1A0511B62ABC300B49A37 /* Copy Frameworks */,
 			);
 			buildRules = (
