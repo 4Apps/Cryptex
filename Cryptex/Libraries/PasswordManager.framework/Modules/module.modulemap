@@ -1,0 +1,8 @@
+framework module PasswordManager {
+  umbrella header "PasswordManager.h"
+
+  export *
+  module * { export * }
+}
+
+
