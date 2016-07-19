@@ -9,8 +9,6 @@
 #import <Cocoa/Cocoa.h>
 
 #import "INAppStoreWindow.h"
-#import "CTextView.h"
-#import "CTableView.h"
 
 // Import swift
 #import "Cryptex-Swift.h"

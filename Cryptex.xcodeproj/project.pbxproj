@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		870758671D3EC038005333B1 /* SourceSansPro-Black.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 870758431D3EBCE5005333B1 /* SourceSansPro-Black.ttf */; };
+		870758681D3EC038005333B1 /* SourceSansPro-BlackItalic.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 870758441D3EBCE5005333B1 /* SourceSansPro-BlackItalic.ttf */; };
+		870758691D3EC038005333B1 /* SourceSansPro-Bold.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 870758451D3EBCE5005333B1 /* SourceSansPro-Bold.ttf */; };
+		8707586A1D3EC038005333B1 /* SourceSansPro-BoldItalic.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 870758461D3EBCE5005333B1 /* SourceSansPro-BoldItalic.ttf */; };
+		8707586B1D3EC038005333B1 /* SourceSansPro-ExtraLight.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 870758471D3EBCE5005333B1 /* SourceSansPro-ExtraLight.ttf */; };
+		8707586C1D3EC038005333B1 /* SourceSansPro-ExtraLightItalic.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 870758481D3EBCE5005333B1 /* SourceSansPro-ExtraLightItalic.ttf */; };
+		8707586D1D3EC038005333B1 /* SourceSansPro-Italic.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 870758491D3EBCE5005333B1 /* SourceSansPro-Italic.ttf */; };
+		8707586E1D3EC038005333B1 /* SourceSansPro-Light.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 8707584A1D3EBCE5005333B1 /* SourceSansPro-Light.ttf */; };
+		8707586F1D3EC038005333B1 /* SourceSansPro-LightItalic.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 8707584B1D3EBCE5005333B1 /* SourceSansPro-LightItalic.ttf */; };
+		870758701D3EC038005333B1 /* SourceSansPro-Regular.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 8707584C1D3EBCE5005333B1 /* SourceSansPro-Regular.ttf */; };
+		870758711D3EC038005333B1 /* SourceSansPro-Semibold.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 8707584D1D3EBCE5005333B1 /* SourceSansPro-Semibold.ttf */; };
+		870758721D3EC038005333B1 /* SourceSansPro-SemiboldItalic.ttf in Copy Fonts */ = {isa = PBXBuildFile; fileRef = 8707584E1D3EBCE5005333B1 /* SourceSansPro-SemiboldItalic.ttf */; };
+		870758821D3EC4DE005333B1 /* CTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870758811D3EC4DE005333B1 /* CTextView.swift */; };
+		870758841D3ED013005333B1 /* CTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870758831D3ED013005333B1 /* CTableView.swift */; };
+		870758861D3ED38D005333B1 /* CTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870758851D3ED38D005333B1 /* CTextFieldCell.swift */; };
+		870758881D3ED77D005333B1 /* Extensions1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870758871D3ED77D005333B1 /* Extensions1.swift */; };
 		8714FE7719A52D0A00C5D6AC /* INAppStoreWindowSwizzling.c in Sources */ = {isa = PBXBuildFile; fileRef = 8714FE6C19A52D0A00C5D6AC /* INAppStoreWindowSwizzling.c */; };
 		8714FE7819A52D0A00C5D6AC /* INWindowBackgroundView+CoreUIRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 8714FE6F19A52D0A00C5D6AC /* INWindowBackgroundView+CoreUIRendering.m */; };
 		8714FE7919A52D0A00C5D6AC /* NSDocument+INAppStoreWindowFixes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8714FE7119A52D0A00C5D6AC /* NSDocument+INAppStoreWindowFixes.m */; };
@@ -20,26 +36,14 @@
 		8774D7D619A2D81700C64E06 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8774D7D519A2D81700C64E06 /* libz.dylib */; };
 		8774D7D819A2D86900C64E06 /* PasswordManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8774D7D719A2D86900C64E06 /* PasswordManager.framework */; };
 		8774D7DC19A2DA1A00C64E06 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 8774D7DB19A2DA1A00C64E06 /* GZIP.m */; };
-		8774D80B19A3A1C100C64E06 /* Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8774D80A19A3A1C100C64E06 /* Extensions.m */; };
 		8774D81019A3ACDE00C64E06 /* pmh_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 8774D80E19A3ACDE00C64E06 /* pmh_parser.c */; };
 		8774D81219A3AD4B00C64E06 /* Cryptex-V001.style in Resources */ = {isa = PBXBuildFile; fileRef = 8774D81119A3AD4B00C64E06 /* Cryptex-V001.style */; };
 		8774D81719A3ADC900C64E06 /* HGMarkdownHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8774D81419A3ADC900C64E06 /* HGMarkdownHighlighter.m */; };
 		8774D81819A3ADC900C64E06 /* HGMarkdownHighlightingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8774D81619A3ADC900C64E06 /* HGMarkdownHighlightingStyle.m */; };
 		8774D81B19A3AE2F00C64E06 /* pmh_styleparser.c in Sources */ = {isa = PBXBuildFile; fileRef = 8774D81919A3AE2F00C64E06 /* pmh_styleparser.c */; };
-		87C1A0501B62AB7F00B49A37 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C1A04F1B62AB7F00B49A37 /* Sparkle.framework */; };
-		87C1A0521B62ABCD00B49A37 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 87C1A04F1B62AB7F00B49A37 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		87D3433419AF57C6004D6E9F /* OpenSans-Bold.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87D3432E19AF57BC004D6E9F /* OpenSans-Bold.ttf */; };
-		87D3433519AF57C6004D6E9F /* OpenSans-BoldItalic.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87D3432F19AF57BC004D6E9F /* OpenSans-BoldItalic.ttf */; };
-		87D3433619AF57C6004D6E9F /* OpenSans-Italic.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87D3433019AF57BC004D6E9F /* OpenSans-Italic.ttf */; };
-		87D3433719AF57C6004D6E9F /* OpenSans-Light.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87D3433119AF57BC004D6E9F /* OpenSans-Light.ttf */; };
-		87D3433819AF57C6004D6E9F /* OpenSans-LightItalic.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87D3433219AF57BC004D6E9F /* OpenSans-LightItalic.ttf */; };
-		87D3433919AF57C6004D6E9F /* OpenSans-Regular.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87D3433319AF57BC004D6E9F /* OpenSans-Regular.ttf */; };
 		87E9B0CE19AC6F32007E2079 /* help.md in Resources */ = {isa = PBXBuildFile; fileRef = 87E9B0CD19AC6F32007E2079 /* help.md */; };
 		87E9B0D719AE46E3007E2079 /* BFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E9B0D619AE46E3007E2079 /* BFImage.m */; };
 		E7103CB11A0192B100CC9A42 /* Cryptex-V002.style in Resources */ = {isa = PBXBuildFile; fileRef = E7103CB01A0192B100CC9A42 /* Cryptex-V002.style */; };
-		E7103CBA1A0197C000CC9A42 /* CTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7103CB91A0197C000CC9A42 /* CTextView.m */; };
-		E7103CBD1A019C3200CC9A42 /* CTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7103CBC1A019C3200CC9A42 /* CTableView.m */; };
-		E7103CC01A01A49C00CC9A42 /* CTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7103CBF1A01A49C00CC9A42 /* CTextFieldCell.m */; };
 		E7790C091A0F702900F6923C /* Cryptex-print.style in Resources */ = {isa = PBXBuildFile; fileRef = E7790C081A0F702900F6923C /* Cryptex-print.style */; };
 		E7CFB35419FD017E00220D69 /* FileIcon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = E7CFB35319FD017E00220D69 /* FileIcon.iconset */; };
 		E7EBAB1B1A0186A000059EA2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8774D78E19A2D77100C64E06 /* MainMenu.xib */; };
@@ -51,35 +55,57 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8774D7F319A3A07000C64E06 /* CopyFiles */ = {
+		8774D7F319A3A07000C64E06 /* Copy Fonts */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = Fonts;
 			dstSubfolderSpec = 7;
 			files = (
-				87D3433419AF57C6004D6E9F /* OpenSans-Bold.ttf in CopyFiles */,
-				87D3433519AF57C6004D6E9F /* OpenSans-BoldItalic.ttf in CopyFiles */,
-				87D3433619AF57C6004D6E9F /* OpenSans-Italic.ttf in CopyFiles */,
-				87D3433719AF57C6004D6E9F /* OpenSans-Light.ttf in CopyFiles */,
-				87D3433819AF57C6004D6E9F /* OpenSans-LightItalic.ttf in CopyFiles */,
-				87D3433919AF57C6004D6E9F /* OpenSans-Regular.ttf in CopyFiles */,
+				870758671D3EC038005333B1 /* SourceSansPro-Black.ttf in Copy Fonts */,
+				870758681D3EC038005333B1 /* SourceSansPro-BlackItalic.ttf in Copy Fonts */,
+				870758691D3EC038005333B1 /* SourceSansPro-Bold.ttf in Copy Fonts */,
+				8707586A1D3EC038005333B1 /* SourceSansPro-BoldItalic.ttf in Copy Fonts */,
+				8707586B1D3EC038005333B1 /* SourceSansPro-ExtraLight.ttf in Copy Fonts */,
+				8707586C1D3EC038005333B1 /* SourceSansPro-ExtraLightItalic.ttf in Copy Fonts */,
+				8707586D1D3EC038005333B1 /* SourceSansPro-Italic.ttf in Copy Fonts */,
+				8707586E1D3EC038005333B1 /* SourceSansPro-Light.ttf in Copy Fonts */,
+				8707586F1D3EC038005333B1 /* SourceSansPro-LightItalic.ttf in Copy Fonts */,
+				870758701D3EC038005333B1 /* SourceSansPro-Regular.ttf in Copy Fonts */,
+				870758711D3EC038005333B1 /* SourceSansPro-Semibold.ttf in Copy Fonts */,
+				870758721D3EC038005333B1 /* SourceSansPro-SemiboldItalic.ttf in Copy Fonts */,
 			);
+			name = "Copy Fonts";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		87C1A0511B62ABC300B49A37 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				87C1A0521B62ABCD00B49A37 /* Sparkle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		870758431D3EBCE5005333B1 /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.ttf"; sourceTree = "<group>"; };
+		870758441D3EBCE5005333B1 /* SourceSansPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		870758451D3EBCE5005333B1 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		870758461D3EBCE5005333B1 /* SourceSansPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		870758471D3EBCE5005333B1 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		870758481D3EBCE5005333B1 /* SourceSansPro-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		870758491D3EBCE5005333B1 /* SourceSansPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Italic.ttf"; sourceTree = "<group>"; };
+		8707584A1D3EBCE5005333B1 /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
+		8707584B1D3EBCE5005333B1 /* SourceSansPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		8707584C1D3EBCE5005333B1 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		8707584D1D3EBCE5005333B1 /* SourceSansPro-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.ttf"; sourceTree = "<group>"; };
+		8707584E1D3EBCE5005333B1 /* SourceSansPro-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		870758811D3EC4DE005333B1 /* CTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTextView.swift; sourceTree = "<group>"; };
+		870758831D3ED013005333B1 /* CTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTableView.swift; sourceTree = "<group>"; };
+		870758851D3ED38D005333B1 /* CTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTextFieldCell.swift; sourceTree = "<group>"; };
+		870758871D3ED77D005333B1 /* Extensions1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions1.swift; sourceTree = "<group>"; };
 		8714FE6C19A52D0A00C5D6AC /* INAppStoreWindowSwizzling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = INAppStoreWindowSwizzling.c; sourceTree = "<group>"; };
 		8714FE6D19A52D0A00C5D6AC /* INAppStoreWindowSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindowSwizzling.h; sourceTree = "<group>"; };
 		8714FE6E19A52D0A00C5D6AC /* INWindowBackgroundView+CoreUIRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INWindowBackgroundView+CoreUIRendering.h"; sourceTree = "<group>"; };
@@ -111,8 +137,6 @@
 		8774D7D719A2D86900C64E06 /* PasswordManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PasswordManager.framework; sourceTree = "<group>"; };
 		8774D7DA19A2DA1A00C64E06 /* GZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZIP.h; sourceTree = "<group>"; };
 		8774D7DB19A2DA1A00C64E06 /* GZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZIP.m; sourceTree = "<group>"; };
-		8774D80919A3A1C100C64E06 /* Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
-		8774D80A19A3A1C100C64E06 /* Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Extensions.m; sourceTree = "<group>"; };
 		8774D80D19A3ACDE00C64E06 /* pmh_definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pmh_definitions.h; sourceTree = "<group>"; };
 		8774D80E19A3ACDE00C64E06 /* pmh_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pmh_parser.c; sourceTree = "<group>"; };
 		8774D80F19A3ACDE00C64E06 /* pmh_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pmh_parser.h; sourceTree = "<group>"; };
@@ -124,12 +148,6 @@
 		8774D81919A3AE2F00C64E06 /* pmh_styleparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pmh_styleparser.c; sourceTree = "<group>"; };
 		8774D81A19A3AE2F00C64E06 /* pmh_styleparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pmh_styleparser.h; sourceTree = "<group>"; };
 		87C1A04F1B62AB7F00B49A37 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = GZIP/Sparkle.framework; sourceTree = "<group>"; };
-		87D3432E19AF57BC004D6E9F /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		87D3432F19AF57BC004D6E9F /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		87D3433019AF57BC004D6E9F /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
-		87D3433119AF57BC004D6E9F /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		87D3433219AF57BC004D6E9F /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		87D3433319AF57BC004D6E9F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		87D7FB6C19A523FD00CAEC79 /* SFDefaultTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDefaultTab.h; sourceTree = "<group>"; };
 		87D7FB6D19A523FD00CAEC79 /* SFDefaultTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDefaultTab.m; sourceTree = "<group>"; };
 		87D7FB6E19A523FD00CAEC79 /* SFTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTabView.h; sourceTree = "<group>"; };
@@ -144,12 +162,6 @@
 		87E9B0D519AE46E3007E2079 /* BFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFImage.h; sourceTree = "<group>"; };
 		87E9B0D619AE46E3007E2079 /* BFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFImage.m; sourceTree = "<group>"; };
 		E7103CB01A0192B100CC9A42 /* Cryptex-V002.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Cryptex-V002.style"; sourceTree = "<group>"; };
-		E7103CB81A0197C000CC9A42 /* CTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTextView.h; sourceTree = "<group>"; };
-		E7103CB91A0197C000CC9A42 /* CTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTextView.m; sourceTree = "<group>"; };
-		E7103CBB1A019C3200CC9A42 /* CTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTableView.h; sourceTree = "<group>"; };
-		E7103CBC1A019C3200CC9A42 /* CTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTableView.m; sourceTree = "<group>"; };
-		E7103CBE1A01A49C00CC9A42 /* CTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTextFieldCell.h; sourceTree = "<group>"; };
-		E7103CBF1A01A49C00CC9A42 /* CTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTextFieldCell.m; sourceTree = "<group>"; };
 		E73713491A15456100CA3B4E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E7790C081A0F702900F6923C /* Cryptex-print.style */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Cryptex-print.style"; sourceTree = "<group>"; };
 		E77D17991A50D00C0089F273 /* Cryptex-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cryptex-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -168,7 +180,6 @@
 			files = (
 				E7F22EB71A300B3E0065E6EB /* WebKit.framework in Frameworks */,
 				8774D7D819A2D86900C64E06 /* PasswordManager.framework in Frameworks */,
-				87C1A0501B62AB7F00B49A37 /* Sparkle.framework in Frameworks */,
 				8774D7D619A2D81700C64E06 /* libz.dylib in Frameworks */,
 				8774D77A19A2D77100C64E06 /* Cocoa.framework in Frameworks */,
 			);
@@ -328,12 +339,18 @@
 		8774D7DE19A39E6200C64E06 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				87D3432E19AF57BC004D6E9F /* OpenSans-Bold.ttf */,
-				87D3432F19AF57BC004D6E9F /* OpenSans-BoldItalic.ttf */,
-				87D3433019AF57BC004D6E9F /* OpenSans-Italic.ttf */,
-				87D3433119AF57BC004D6E9F /* OpenSans-Light.ttf */,
-				87D3433219AF57BC004D6E9F /* OpenSans-LightItalic.ttf */,
-				87D3433319AF57BC004D6E9F /* OpenSans-Regular.ttf */,
+				870758431D3EBCE5005333B1 /* SourceSansPro-Black.ttf */,
+				870758441D3EBCE5005333B1 /* SourceSansPro-BlackItalic.ttf */,
+				870758451D3EBCE5005333B1 /* SourceSansPro-Bold.ttf */,
+				870758461D3EBCE5005333B1 /* SourceSansPro-BoldItalic.ttf */,
+				870758471D3EBCE5005333B1 /* SourceSansPro-ExtraLight.ttf */,
+				870758481D3EBCE5005333B1 /* SourceSansPro-ExtraLightItalic.ttf */,
+				870758491D3EBCE5005333B1 /* SourceSansPro-Italic.ttf */,
+				8707584A1D3EBCE5005333B1 /* SourceSansPro-Light.ttf */,
+				8707584B1D3EBCE5005333B1 /* SourceSansPro-LightItalic.ttf */,
+				8707584C1D3EBCE5005333B1 /* SourceSansPro-Regular.ttf */,
+				8707584D1D3EBCE5005333B1 /* SourceSansPro-Semibold.ttf */,
+				8707584E1D3EBCE5005333B1 /* SourceSansPro-SemiboldItalic.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -341,8 +358,7 @@
 		8774D80819A3A18F00C64E06 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8774D80919A3A1C100C64E06 /* Extensions.h */,
-				8774D80A19A3A1C100C64E06 /* Extensions.m */,
+				870758871D3ED77D005333B1 /* Extensions1.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -388,12 +404,9 @@
 			isa = PBXGroup;
 			children = (
 				E77D179A1A50D00C0089F273 /* CSplitView.swift */,
-				E7103CB81A0197C000CC9A42 /* CTextView.h */,
-				E7103CB91A0197C000CC9A42 /* CTextView.m */,
-				E7103CBB1A019C3200CC9A42 /* CTableView.h */,
-				E7103CBC1A019C3200CC9A42 /* CTableView.m */,
-				E7103CBE1A01A49C00CC9A42 /* CTextFieldCell.h */,
-				E7103CBF1A01A49C00CC9A42 /* CTextFieldCell.m */,
+				870758811D3EC4DE005333B1 /* CTextView.swift */,
+				870758831D3ED013005333B1 /* CTableView.swift */,
+				870758851D3ED38D005333B1 /* CTextFieldCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -409,7 +422,7 @@
 				8774D77219A2D77100C64E06 /* Sources */,
 				8774D77319A2D77100C64E06 /* Frameworks */,
 				8774D77419A2D77100C64E06 /* Resources */,
-				8774D7F319A3A07000C64E06 /* CopyFiles */,
+				8774D7F319A3A07000C64E06 /* Copy Fonts */,
 				87C1A0511B62ABC300B49A37 /* Copy Frameworks */,
 			);
 			buildRules = (
@@ -503,18 +516,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8714FE7919A52D0A00C5D6AC /* NSDocument+INAppStoreWindowFixes.m in Sources */,
-				E7103CBD1A019C3200CC9A42 /* CTableView.m in Sources */,
 				8714FE7819A52D0A00C5D6AC /* INWindowBackgroundView+CoreUIRendering.m in Sources */,
+				870758841D3ED013005333B1 /* CTableView.swift in Sources */,
 				8774D81819A3ADC900C64E06 /* HGMarkdownHighlightingStyle.m in Sources */,
 				8714FE7719A52D0A00C5D6AC /* INAppStoreWindowSwizzling.c in Sources */,
-				E7103CBA1A0197C000CC9A42 /* CTextView.m in Sources */,
 				8774D78D19A2D77100C64E06 /* AppDelegate.m in Sources */,
+				870758881D3ED77D005333B1 /* Extensions1.swift in Sources */,
 				8774D7DC19A2DA1A00C64E06 /* GZIP.m in Sources */,
-				8774D80B19A3A1C100C64E06 /* Extensions.m in Sources */,
+				870758821D3EC4DE005333B1 /* CTextView.swift in Sources */,
 				8774D81B19A3AE2F00C64E06 /* pmh_styleparser.c in Sources */,
 				8774D78619A2D77100C64E06 /* main.m in Sources */,
+				870758861D3ED38D005333B1 /* CTextFieldCell.swift in Sources */,
 				8774D81019A3ACDE00C64E06 /* pmh_parser.c in Sources */,
-				E7103CC01A01A49C00CC9A42 /* CTextFieldCell.m in Sources */,
 				E7EDE89F1A50D23B007BAC1A /* CSplitView.swift in Sources */,
 				8714FE7B19A52D0A00C5D6AC /* INWindowButton.m in Sources */,
 				8714FE7A19A52D0A00C5D6AC /* INAppStoreWindow.m in Sources */,

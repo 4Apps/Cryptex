@@ -8,10 +8,9 @@
 
 #import "AppDelegate.h"
 #import <PasswordManager/PasswordManager.h>
-#import "Extensions.h"
 #import "BFImage.h"
 #import "GZIP.h"
-#import "CTextFieldCell.h"
+#import "HGMarkdownHighlighter.h"
 #import <WebKit/WebKit.h>
 
 #ifdef ADHOC

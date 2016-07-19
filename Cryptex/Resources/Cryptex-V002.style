@@ -2,12 +2,12 @@ editor
 foreground: 6a7b82
 background: f6f6f6
 caret-color: 000000
-font-family: Open Sans
-font-size: 14
+font-family: Source Sans Pro
+font-size: 16
 
 H1
-font-family: Open Sans
-font-size: 19
+font-family: Source Sans Pro
+font-size: 18
 font-style: bold
 foreground: b85536
 
