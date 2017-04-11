@@ -3,3 +3,5 @@
 //
 
 #import "HGMarkdownHighlighter.h"
+#import "INAppStoreWindow.h"
+#import "GZip.h"

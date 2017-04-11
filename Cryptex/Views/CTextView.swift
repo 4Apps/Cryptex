@@ -3,7 +3,7 @@
 //  Cryptex
 //
 //  Created by Gints Murans on 19.07.16.
-//  Copyright © 2016. g. Early Bird. All rights reserved.
+//  Copyright © 2016. g. 4Apps. All rights reserved.
 //
 
 import Cocoa
@@ -22,19 +22,19 @@ class CTextView: NSTextView {
         hl = HGMarkdownHighlighter(textView: self, waitInterval: 0.20)
         hl!.makeLinksClickable = true
 
-        let styleFilePath = NSBundle.mainBundle().pathForResource("Cryptex-V002", ofType: "style")
+        let styleFilePath = Bundle.main.path(forResource: "Cryptex-V002", ofType: "style")
         var styleContents = ""
         do {
-            styleContents = try String(contentsOfFile: styleFilePath!, encoding: NSUTF8StringEncoding)
+            styleContents = try String(contentsOfFile: styleFilePath!, encoding: String.Encoding.utf8)
         } catch {
             let alert = NSAlert()
             alert.messageText = "Could not read style file"
-            alert.alertStyle = NSAlertStyle.WarningAlertStyle
-            alert.addButtonWithTitle("OK")
+            alert.alertStyle = NSAlertStyle.warning
+            alert.addButton(withTitle: "OK")
             alert.runModal()
         }
 
-        hl!.applyStylesFromStylesheet(styleContents) { (errorMessages: [AnyObject]!) in
+        hl!.applyStyles(fromStylesheet: styleContents) { (errorMessages: [Any]?) in
             var errorsInfo: String = ""
 
             for str: String in (errorMessages as! [String]) {
@@ -46,36 +46,36 @@ class CTextView: NSTextView {
             let alert = NSAlert()
             alert.messageText = "There were some errors when parsing the stylesheet:"
             alert.informativeText = errorsInfo
-            alert.alertStyle = NSAlertStyle.WarningAlertStyle
-            alert.addButtonWithTitle("OK")
+            alert.alertStyle = NSAlertStyle.warning
+            alert.addButton(withTitle: "OK")
             alert.runModal()
         }
 
         hl!.activate()
 
         // Register for drag and drop
-        self.registerForDraggedTypes([NSPasteboardTypeString])
+        self.register(forDraggedTypes: [NSPasteboardTypeString])
     }
 
 
     // MARK: - Drag & Drop
 
-    override func performDragOperation(sender: NSDraggingInfo) -> Bool {
+    override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
         let pboard: NSPasteboard = sender.draggingPasteboard()
 
         if (pboard.types?.contains(NSFilenamesPboardType) == true) {
-            let files = pboard.propertyListForType(NSFilenamesPboardType)
+            let files = pboard.propertyList(forType: NSFilenamesPboardType)
             for file: String in (files as! [String]) {
-                let fileExtension: CFStringRef = (file as NSString).pathExtension
-                let fileUTI: CFStringRef = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, fileExtension, nil) as! CFStringRef
+                let fileExtension: CFString = (file as NSString).pathExtension as CFString
+                let fileUTI: CFString = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, fileExtension, nil) as! CFString
 
-                let file_contents: NSData! = NSData(contentsOfFile: file)
+                let file_contents: Data! = try? Data(contentsOf: URL(fileURLWithPath: file))
                 var string: String? = nil
                 if (UTTypeConformsTo(fileUTI, kUTTypeUTF16PlainText)) {
-                    string = String(data: file_contents, encoding: NSUTF16StringEncoding)
+                    string = String(data: file_contents, encoding: String.Encoding.utf16)
                 }
                 else if (UTTypeConformsTo(fileUTI, kUTTypeUTF8PlainText) || UTTypeConformsTo(fileUTI, kUTTypeText)) {
-                    string = String(data: file_contents, encoding: NSUTF8StringEncoding)
+                    string = String(data: file_contents, encoding: String.Encoding.utf8)
                 }
 
                 if (string != nil) {
@@ -83,7 +83,7 @@ class CTextView: NSTextView {
                 }
             }
         } else if (pboard.types?.contains(NSPasteboardTypeString) == true) {
-            string = pboard.stringForType(NSPasteboardTypeString)
+            string = pboard.string(forType: NSPasteboardTypeString)
             self.insertText(string!)
         }
 

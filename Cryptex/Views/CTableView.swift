@@ -3,14 +3,14 @@
 //  Cryptex
 //
 //  Created by Gints Murans on 20.07.16.
-//  Copyright © 2016. g. Early Bird. All rights reserved.
+//  Copyright © 2016. g. 4Apps. All rights reserved.
 //
 
 import Cocoa
 
 
 @objc protocol CTableViewDelegate {
-    func CTableTextDidEndEditing(string: String)
+    func CTableTextDidEndEditing(_ string: String)
 }
 
 
@@ -19,12 +19,12 @@ class CTableView: NSTableView {
     var cDelegate: CTableViewDelegate?
 
     override var focusRingType: NSFocusRingType {
-        get { return NSFocusRingType.None }
+        get { return NSFocusRingType.none }
         set { super.focusRingType = newValue }
     }
 
 
-    override func textDidEndEditing(notification: NSNotification) {
+    override func textDidEndEditing(_ notification: Notification) {
         if (self.cDelegate != nil) {
             let textView: NSTextView = notification.object as! NSTextView
             self.cDelegate?.CTableTextDidEndEditing(textView.string!)

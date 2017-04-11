@@ -22,18 +22,18 @@ class CSplitView: NSSplitView, NSSplitViewDelegate {
 
 
     // MARK: - NSSplitViewDelegate
-    func splitView(splitView: NSSplitView, canCollapseSubview subview: NSView) -> Bool {
+    func splitView(_ splitView: NSSplitView, canCollapseSubview subview: NSView) -> Bool {
         return false
     }
 
-    func splitView(splitView: NSSplitView, constrainMinCoordinate proposedMinimumPosition: CGFloat, ofSubviewAt dividerIndex: Int) -> CGFloat {
+    func splitView(_ splitView: NSSplitView, constrainMinCoordinate proposedMinimumPosition: CGFloat, ofSubviewAt dividerIndex: Int) -> CGFloat {
         if proposedMinimumPosition < 100 {
             return 100.0
         }
         return proposedMinimumPosition
     }
 
-    func splitView(splitView: NSSplitView, constrainMaxCoordinate proposedMaximumPosition: CGFloat, ofSubviewAt dividerIndex: Int) -> CGFloat {
+    func splitView(_ splitView: NSSplitView, constrainMaxCoordinate proposedMaximumPosition: CGFloat, ofSubviewAt dividerIndex: Int) -> CGFloat {
         if proposedMaximumPosition > 400 {
          return 400.0
         }
