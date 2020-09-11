@@ -9,7 +9,7 @@
 import Cocoa
 
 
-@objc protocol CTableViewDelegate {
+protocol CTableViewDelegate {
     func CTableTextDidEndEditing(_ string: String)
 }
 
@@ -27,7 +27,7 @@ class CTableView: NSTableView {
     override func textDidEndEditing(_ notification: Notification) {
         if (self.cDelegate != nil) {
             let textView: NSTextView = notification.object as! NSTextView
-            self.cDelegate?.CTableTextDidEndEditing(textView.string!)
+            self.cDelegate?.CTableTextDidEndEditing(textView.string)
         }
 
         super.textDidEndEditing(notification)

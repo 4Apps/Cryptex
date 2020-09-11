@@ -29,7 +29,7 @@ class CTextView: NSTextView {
         } catch {
             let alert = NSAlert()
             alert.messageText = "Could not read style file"
-            alert.alertStyle = NSAlertStyle.warning
+            alert.alertStyle = NSAlert.Style.warning
             alert.addButton(withTitle: "OK")
             alert.runModal()
         }
@@ -46,7 +46,7 @@ class CTextView: NSTextView {
             let alert = NSAlert()
             alert.messageText = "There were some errors when parsing the stylesheet:"
             alert.informativeText = errorsInfo
-            alert.alertStyle = NSAlertStyle.warning
+            alert.alertStyle = NSAlert.Style.warning
             alert.addButton(withTitle: "OK")
             alert.runModal()
         }
@@ -54,7 +54,7 @@ class CTextView: NSTextView {
         hl!.activate()
 
         // Register for drag and drop
-        self.register(forDraggedTypes: [NSPasteboardTypeString])
+        self.registerForDraggedTypes([NSPasteboard.PasteboardType.string])
     }
 
 
@@ -63,8 +63,9 @@ class CTextView: NSTextView {
     override func performDragOperation(_ sender: NSDraggingInfo) -> Bool {
         let pboard: NSPasteboard = sender.draggingPasteboard()
 
-        if (pboard.types?.contains(NSFilenamesPboardType) == true) {
-            let files = pboard.propertyList(forType: NSFilenamesPboardType)
+        let NSFilenamesPboardTypeTemp = NSPasteboard.PasteboardType("NSFilenamesPboardType")
+        if (pboard.types?.contains(NSFilenamesPboardTypeTemp) == true) {
+            let files = pboard.propertyList(forType: NSFilenamesPboardTypeTemp)
             for file: String in (files as! [String]) {
                 let fileExtension: CFString = (file as NSString).pathExtension as CFString
                 let fileUTI: CFString = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, fileExtension, nil) as! CFString
@@ -82,9 +83,9 @@ class CTextView: NSTextView {
                     self.insertText(string!)
                 }
             }
-        } else if (pboard.types?.contains(NSPasteboardTypeString) == true) {
-            string = pboard.string(forType: NSPasteboardTypeString)
-            self.insertText(string!)
+        } else if (pboard.types?.contains(NSPasteboard.PasteboardType.string) == true) {
+            string = pboard.string(forType: NSPasteboard.PasteboardType.string)!
+            self.insertText(string)
         }
 
         return true

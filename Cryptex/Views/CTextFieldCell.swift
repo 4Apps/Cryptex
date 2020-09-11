@@ -13,7 +13,7 @@ class CTextFieldCell: NSTextFieldCell {
     // MARK: - View
     override func awakeFromNib() {
         self.font = NSFont(name: "Source Sans Pro", size:14.0)
-        self.bezelStyle = NSTextFieldBezelStyle.roundedBezel
+        self.bezelStyle = NSTextField.BezelStyle.roundedBezel
     }
 
 
